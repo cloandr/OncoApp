@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragTreatmentNew"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".treatment.TreatmentNewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/titleFragTreatmentNew"
+        android:layout_width="234dp"
+        android:layout_height="48dp"
+        android:text="Ajouter un traitement"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/saveT_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="56dp"
+        android:text="Save
+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/nameMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleFragTreatmentNew" />
+
+    <TextView
+        android:id="@+id/titleSpinnerAdministration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="21dp"
+        android:text="Voie d'administration : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameMedicine" />
+
+    <Spinner
+        android:id="@+id/spinnerAdministration"
+        android:layout_width="159dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameMedicine" />
+
+    <TextView
+        android:id="@+id/titlePeriode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="20dp"
+        android:text="Période de traitement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleSpinnerAdministration" />
+
+    <TextView
+        android:id="@+id/dateDebutToSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="15dp"
+        android:text="Début"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlePeriode" />
+
+    <ImageButton
+        android:id="@+id/selectDateDebut"
+        android:layout_width="40dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="260dp"
+        android:src="@drawable/add__new__create__date__appointment_30px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/selectDateFin"
+        android:layout_width="40dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="76dp"
+        android:src="@drawable/add__new__create__date__appointment_30px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateFinToSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="146dp"
+        android:text="Fin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerAdministration" />
+
+    <TextView
+        android:id="@+id/titleSpinnerDosage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="25dp"
+        android:text="Dosage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateDebutToSet" />
+
+    <EditText
+        android:id="@+id/doseText"
+        android:layout_width="74dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/titleSpinnerDosage"
+        app:layout_constraintTop_toBottomOf="@+id/selectDateDebut" />
+
+    <TextView
+        android:id="@+id/titleFrequence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:text="Fréquence"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleSpinnerDosage" />
+
+    <Spinner
+        android:id="@+id/spinnerDosage"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectDateFin" />
+
+    <TextView
+        android:id="@+id/prise1Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="14dp"
+        android:text="Prise 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleFrequence" />
+
+    <TextView
+        android:id="@+id/tpTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="Heure"
+        app:layout_constraintStart_toEndOf="@+id/prise1Tv"
+        app:layout_constraintTop_toBottomOf="@+id/doseText" />
+
+    <ImageButton
+        android:id="@+id/selectTime1"
+        android:layout_width="37dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="144dp"
+        android:src="@drawable/alarm__alert__bell__ring__sound_30px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerAdministration" />
+
+    <TextView
+        android:id="@+id/prise2Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="Prise 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleFrequence" />
+
+    <ImageButton
+        android:id="@+id/selectTime2"
+        android:layout_width="37dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="136dp"
+        android:src="@drawable/alarm__alert__bell__ring__sound_30px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerAdministration" />
+
+    <ImageButton
+        android:id="@+id/selectTime3"
+        android:layout_width="37dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="136dp"
+        android:src="@drawable/alarm__alert__bell__ring__sound_30px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerAdministration" />
+
+    <TextView
+        android:id="@+id/prise3Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="108dp"
+        android:text="Prise 3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleFrequence" />
+
+    <TextView
+        android:id="@+id/tpTV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="148dp"
+        android:text="Heure"
+        app:layout_constraintStart_toEndOf="@+id/prise1Tv"
+        app:layout_constraintTop_toBottomOf="@+id/doseText" />
+
+    <TextView
+        android:id="@+id/tpTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="88dp"
+        android:text="Heure"
+        app:layout_constraintStart_toEndOf="@+id/prise1Tv"
+        app:layout_constraintTop_toBottomOf="@+id/doseText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainMenuFragment">
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.myoncoappbeta.wiki.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_contactLsitFragment"
+            app:destination="@id/contactLsitFragment" />
+        <action
+            android:id="@+id/action2"
+            app:destination="@id/appointmentLsitFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_treatmentListFragment"
+            app:destination="@id/treatmentListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactLsitFragment"
+        android:name="com.example.myoncoappbeta.contact.ContactListFragment"
+        android:label="fragment_contact_lsit"
+        tools:layout="@layout/fragment_contact_lsit" >
+        <action
+            android:id="@+id/action_contactLsitFragment_to_contactNewFragment"
+            app:destination="@id/contactNewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactNewFragment"
+        android:name="com.example.myoncoappbeta.contact.ContactNewFragment"
+        android:label="fragment_contact_new"
+        tools:layout="@layout/fragment_contact_new" />
+    <fragment
+        android:id="@+id/appointmentLsitFragment"
+        android:name="com.example.myoncoappbeta.appointment.AppointmentListFragment"
+        android:label="fragment_appointment_lsit"
+        tools:layout="@layout/fragment_appointment_lsit" >
+        <action
+            android:id="@+id/action_appointmentLsitFragment_to_appointmentNewFragment"
+            app:destination="@id/appointmentNewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentNewFragment"
+        android:name="com.example.myoncoappbeta.appointment.AppointmentNewFragment"
+        android:label="fragment_appointment_new"
+        tools:layout="@layout/fragment_appointment_new" />
+    <fragment
+        android:id="@+id/treatmentListFragment"
+        android:name="com.example.myoncoappbeta.treatment.TreatmentListFragment"
+        android:label="fragment_treatment_list"
+        tools:layout="@layout/fragment_treatment_list" />
+</navigation>
