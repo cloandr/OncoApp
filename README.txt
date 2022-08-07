@@ -1,39 +1,34 @@
 **********************************************************************
-PROJET ANDROID BIO/SE : Application destinée aux enfants malades
+ANDROID COURSE PROJECT SPRING 2021
 **********************************************************************
-Auteurs : Chloé ANDRIAMISEZA - Epiphanie OUEDRAOGO
+Authors : Chloé ANDRIAMISEZA - Epiphanie OUEDRAOGO
 
-Information générale : Cette partie du projet représente la partie IHM du projet (soucis avec le Git pour le côté base de données géré par Epiphanie) avec l'architecture de la base de données
+This mini app aims to help children with cancer, in thier disease management including appointment reminder and information about their treatment.
 
+Course Requirement :the app navigation must only use fragments
 
-Objectif : Cette application a été conçue pour permettre aux enfants malades de gérer leur quotidien médical
-
-FONCTIONALITES : 
-	Interface prendre un nouveau rendez-vous
-	Interface programmer sa prise de médicaments
-	Interface gérer ses contacts (membres de l'équipe médicale)
-
-EXIGENCES
-	Faciliter la navigation au sein de l'IHM : utilisations uniquements de fragments
-
-TECHNOLOGIES UTILISEES 
-	Java For Android 
-	XML pour les ressources du projet
+Features
+	Book an appointment
+	Add a new specialist in your medical team
 
 
-ARCHITECTURE IHM: 1 activité, 10 Fragments, 1 Navigation 
-	Activité vide : fragment viewver host
-	1 Fragment : menu principal
-	3 Fragments : Listes pour redndez-vous, contacts, traitement
-	3 Fragments : Création rendez vous, contact, traitement
-BASE DE DONNEES
-	6 classes différents : 3 Dao et 3 Model
+Languages: Java, XML, SQLite
 
-EXTENSIONS ENSAGESS
-	Connexion à la base de données : à terminer 
-	Affichage en RecyclerView des listes : à corriger
-	Amélioration de l'IHM
+App Mapping
+	Blank activity used as fragment viewver host
+	1 Fragment used as main page
+	3 Fragments used as menu list for appointments, contacts and treatments
+	3 Fragmentsfor item creation
 
+
+Database
+	6 classes  : 3 Dao et 3 Model
+
+Future works
+	Display item information
+	Features to update information
+	Delete option
+	UX/UI design
 
 
 	
